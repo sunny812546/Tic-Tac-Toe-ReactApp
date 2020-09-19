@@ -1,38 +1,77 @@
-.App {
+.container-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* border: 2px dashed white; */
+  width: 400px;
+  margin: auto;
+}
+
+.box {
+  color: aliceblue;
+  padding: 25px;
+  border: 1px solid white;
   text-align: center;
+  cursor: pointer;
+  font-size: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Animation */
+.animated-box {
+  margin: auto;
+  border-radius: 11px 0;
+  color: rgb(255, 217, 0);
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  padding: 51px;
+  width: 201px;
+  -webkit-animation: fontbulger 2s infinite;
+  -moz-animation: fontbulger 2s infinite;
+  -o-animation: fontbulger 2s infinite;
+  animation: fontbulger 2s infinite;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@-webkit-keyframes fontbulger {
+  0%,
+  100% {
+    font-size: 20px;
+  }
+
+  50% {
+    font-size: 30px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@-moz-keyframes fontbulger {
+  0%,
+  100% {
+    font-size: 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  50% {
+    font-size: 30px;
+  }
+}
+
+@-o-keyframes fontbulger {
+  0%,
+  100% {
+    font-size: 20px;
+  }
+
+  50% {
+    font-size: 30px;
+  }
+}
+
+@keyframes fontbulger {
+  0%,
+  100% {
+    font-size: 20px;
+  }
+
+  50% {
+    font-size: 30px;
   }
 }
